@@ -1,0 +1,12 @@
+{
+  "name": "girlydo",
+  "version": "1.0.0",
+  "description": "Girlypop monthly todo list with persistent tasks.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^30.0.0"
+  }
+}
