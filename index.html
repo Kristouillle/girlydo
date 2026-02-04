@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Girlypop Monthly Todo Garden</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">💖 Girlypop productivity</p>
+          <h1>September Glow-Up Todo Garden</h1>
+          <p class="subtitle">
+            Soft-focus monthly planner with nested sparkle tasks and color-changing days.
+          </p>
+        </div>
+        <div class="hero-icons" aria-hidden="true">
+          <span>🧁</span>
+          <span>🌷</span>
+          <span>🪞</span>
+        </div>
+      </header>
+
+      <section class="legend">
+        <div class="legend-item">
+          <span class="legend-dot" style="--hue: 0"></span>
+          <span>Busy day</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="--hue: 60"></span>
+          <span>In progress</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="--hue: 120"></span>
+          <span>All done</span>
+        </div>
+      </section>
+
+      <section class="calendar" aria-label="Monthly todo list">
+        <div class="weekday-row">
+          <span>Sun</span>
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+        </div>
+        <div class="days-grid" id="days-grid"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
