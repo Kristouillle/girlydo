@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Girlypop Monthly Todo Garden</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">💖 Girlypop productivity</p>
+          <h1>September Glow-Up Todo Garden</h1>
+          <p class="subtitle">
+            Soft-focus monthly planner with nested sparkle tasks and color-changing days.
+          </p>
+        </div>
+        <div class="hero-icons" aria-hidden="true">
+          <span>🧁</span>
+          <span>🌷</span>
+          <span>🪞</span>
+        </div>
+      </header>
+
+      <section class="legend">
+        <div class="legend-item">
+          <span class="legend-dot" style="--hue: 0"></span>
+          <span>Busy day</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="--hue: 60"></span>
+          <span>In progress</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot" style="--hue: 120"></span>
+          <span>All done</span>
+        </div>
+      </section>
+
+      <section class="calendar" aria-label="Monthly todo list">
+        <div class="calendar-header">
+          <button class="ghost-button" type="button" id="prev-month">←</button>
+          <h2 id="month-label">September 2024</h2>
+          <button class="ghost-button" type="button" id="next-month">→</button>
+        </div>
+        <div class="weekday-row">
+          <span>Sun</span>
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+        </div>
+        <div class="days-grid" id="days-grid"></div>
+      </section>
+    </main>
+
+    <div class="modal-backdrop" id="task-modal" aria-hidden="true">
+      <div class="modal">
+        <header class="modal-header">
+          <div>
+            <p class="modal-eyebrow">✨ Day details</p>
+            <h3 id="modal-title">Day</h3>
+            <p class="modal-subtitle">Add tasks and adorable subtasks.</p>
+          </div>
+          <button class="icon-button" type="button" id="close-modal">✕</button>
+        </header>
+
+        <section class="modal-body">
+          <div class="input-row">
+            <input type="text" id="new-task-input" placeholder="Add a new task" />
+            <button class="primary-button" type="button" id="add-task">Add</button>
+          </div>
+
+          <div class="modal-task-list" id="modal-task-list"></div>
+        </section>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
